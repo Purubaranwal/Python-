@@ -1,0 +1,30 @@
+#create a function which takes an parameter of string type.
+# - accept the string in case if the string contains all vowels
+# - ....all vowels at even positions 
+def q2(s):
+  def q21():
+    i = 0
+    while i < len(s):
+      
+      if s[i] not in "AEIOUaeiou":
+        i=len(s)
+        return False
+      else:
+        i+=2
+        pass
+    return True
+
+  def q22():
+    i = 1
+    while i < len(s):
+      
+      if s[i] not in "AEIOUaeiou":
+        i+=2
+      else:
+        i = len(s)
+        return False
+      return True
+  return q21()+q22()
+    
+
+
